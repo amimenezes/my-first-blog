@@ -6,7 +6,6 @@
         <div>
             <h1><a href="">Django Girls Blos</a></h1>
         </div>
-<<<<<<< HEAD
 
         <div>
             <p>published: 03.11.2016, 23:52</p>
@@ -20,35 +19,32 @@
             <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
         </div>
 
-=======
-        
         {% for post in posts %}
-        
+
             <div>
                 <p>published: {{ post.published_date }}</p>
                 <h1><a href="">{{ post.title }}</a></h1>
                 <p>{{ post.text|linebreaksbr }}</p>
             </div>
-        
+
         {% endfor %}
-        
+
         {{posts}}
             <p>published: 03.11.2016, 23:52</p>
             <h2><a href="">My first post</a></h2>
             <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum mass a justo sit amet risus.</p>
         {{posts}}
-        
+
         {% for post in posts %}
             {{ post }}
         {% endfor %}
-        
+
         {{posts}}
             <p>published: 03.11.2016, 23:55</p>
             <h2><a href="">My second post</a></h2>
             <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
         {{posts}}
-        
->>>>>>> bbb4568a9bcf8b05028422ba8c25b0d22b25c900
+
         <p>Hi there!</p>
         <p>It works!</p>
     </body>
